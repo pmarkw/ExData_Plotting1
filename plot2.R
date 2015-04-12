@@ -17,7 +17,6 @@ df$Global_active_power <- as.numeric(as.character(df$Global_active_power))
 png("plot2.png")
 
 ## Plot line
-## hist(gap, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 plot(df$Global_active_power, type = "l", xlab = " ", ylab = "Global Active Power (kilowatts)", axes = FALSE)
 axis(side = 1, at = seq(0, 2880, by = 1440), labels = c("Thu", "Fri", "Sat") )
 axis(2)
